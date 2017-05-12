@@ -3,6 +3,7 @@
 """
 This file will parse out the session.xml file for the Session ID and use that as the password
 int the user-mapping.xml file for all the guacamole users.
+
 """
 
 import xmltodict
