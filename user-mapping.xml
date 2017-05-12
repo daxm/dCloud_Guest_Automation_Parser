@@ -1,5 +1,5 @@
 <user-mapping>
-  <authorize username="dcloud" password="C1sco12345">
+  <authorize username="dcloud" password="394445">
     <connection name="hq-wkst">
       <protocol>rdp</protocol>
       <param name="hostname">172.16.100.250</param>
@@ -74,7 +74,7 @@
       <param name="font-size">14</param>
     </connection>
   </authorize>
-  <authorize username="root" password="C1sco12345">
+  <authorize username="root" password="394445">
     <connection name="oob-server">
       <protocol>ssh</protocol>
       <param name="hostname">198.18.129.0</param>
