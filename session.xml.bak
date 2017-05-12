@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session>
+  <datacenter>RTP</datacenter>
+  <id>394445</id>
+  <owner>dmickels</owner>
+  <vpod>779</vpod>
+  <anycpwd>6f32b9</anycpwd>
+  <devices></devices>
+  <translations>
+    <translation>
+      <inside>198.18.129.0</inside>
+      <outside>64.100.10.16</outside>
+      <name>oob.vpod779.dc-01.com</name>
+    </translation>
+  </translations>
+  <dids></dids>
+</session>

@@ -4,6 +4,7 @@
 This file will parse out the session.xml file for the Session ID and use that as the password
 int the user-mapping.xml file for all the guacamole users.
 
+This file's source is from https://github.com/daxm/dCloud_Guest_Automation_Parser.
 """
 
 import xmltodict
