@@ -1,0 +1,88 @@
+<user-mapping>
+  <authorize username="dcloud" password="C1sco12345">
+    <connection name="hq-wkst">
+      <protocol>rdp</protocol>
+      <param name="hostname">172.16.100.250</param>
+      <param name="port">3389</param>
+      <param name="username">Administrator</param>
+      <param name="password">C1sco12345</param>
+    </connection>
+    <connection name="remote1-wkst">
+      <protocol>rdp</protocol>
+      <param name="hostname">172.16.103.250</param>
+      <param name="port">3389</param>
+      <param name="username">Administrator</param>
+      <param name="password">C1sco12345</param>
+    </connection>
+    <connection name="remote2-wkst">
+      <protocol>rdp</protocol>
+      <param name="hostname">172.16.105.250</param>
+      <param name="port">3389</param>
+      <param name="username">Administrator</param>
+      <param name="password">C1sco12345</param>
+    </connection>
+    <connection name="inet-server">
+      <protocol>rdp</protocol>
+      <param name="hostname">198.18.4.5</param>
+      <param name="port">3389</param>
+      <param name="username">user</param>
+      <param name="password">C1sco12345</param>
+    </connection>
+    <connection name="hq-fmc">
+      <protocol>ssh</protocol>
+      <param name="hostname">172.16.100.100</param>
+      <param name="port">22</param>
+      <param name="username">admin</param>
+      <param name="password">Admin123</param>
+      <param name="color-scheme">green-black</param>
+      <param name="font-size">14</param>
+    </connection>
+    <connection name="hq-ftd">
+      <protocol>ssh</protocol>
+      <param name="hostname">172.16.100.10</param>
+      <param name="port">22</param>
+      <param name="username">admin</param>
+      <param name="password">Admin123</param>
+      <param name="color-scheme">green-black</param>
+      <param name="font-size">14</param>
+    </connection>
+    <connection name="remote1-ftd">
+      <protocol>ssh</protocol>
+      <param name="hostname">198.18.2.10</param>
+      <param name="port">22</param>
+      <param name="username">admin</param>
+      <param name="password">Admin123</param>
+      <param name="color-scheme">green-black</param>
+      <param name="font-size">14</param>
+    </connection>
+    <connection name="remote2-ftd">
+      <protocol>ssh</protocol>
+      <param name="hostname">198.18.3.100</param>
+      <param name="port">22</param>
+      <param name="username">admin</param>
+      <param name="password">Admin123</param>
+      <param name="color-scheme">green-black</param>
+      <param name="font-size">14</param>
+    </connection>
+    <connection name="dmz-server">
+      <protocol>ssh</protocol>
+      <param name="hostname">172.16.102.50</param>
+      <param name="port">22</param>
+      <param name="username">user</param>
+      <param name="password">C1sco12345</param>
+      <param name="color-scheme">green-black</param>
+      <param name="font-size">14</param>
+    </connection>
+  </authorize>
+  <authorize username="root" password="C1sco12345">
+    <connection name="oob-server">
+      <protocol>ssh</protocol>
+      <param name="hostname">198.18.129.0</param>
+      <param name="port">22</param>
+      <param name="username">daxm</param>
+      <param name="password">daxm..</param>
+      <param name="color-scheme">green-black</param>
+      <param name="font-size">14</param>
+    </connection>
+  </authorize>
+</user-mapping>
