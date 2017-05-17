@@ -12,6 +12,7 @@ import json
 from lxml import etree
 import os
 import sys
+import hashlib
 
 # Fix the path variable to match your setup.
 pathtosessionfile = '.'
@@ -33,6 +34,10 @@ except:
 
 # I need the Session ID and the "oob" URL as they are needed to access the lab.
 sessionid = dcloudsession['session']['id']
+m = hashlib.md5()
+m.update(sessionid)
+sessionid_md5 = m.hexdigest()
+
 ooburl = dcloudsession['session']['translations']['translation']['name']
 
 # Read in the user-mapping.xml file and update the guacamole users' password to the sessionid.
@@ -41,7 +46,8 @@ try:
     tree = etree.parse(usermappingfile)
     root = tree.getroot()
     for child in root:
-        child.attrib['password'] = sessionid
+        child.attrib['password'] = sessionid_md5
+        child.attrib['encoding'] = 'md5'
 
     # Save the updated user-mapping.xml file
     tree = etree.ElementTree(root)
